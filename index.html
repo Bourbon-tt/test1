@@ -1,10 +1,61 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Titre de la page</title>
+    <title>La Course contre la Montre dans l'Université</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Titre principal</h1>
-    <p>Contenu de la page</p>
+    <header>
+      <h1>La Course contre la Montre dans l'Université</h1>
+      <nav>
+        <ul>
+          <li><a href="#apropos">A propos</a></li>
+          <li><a href="#regles">Règles</a></li>
+          <li><a href="#inscription">Inscription</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="presentation">
+        <h2>Bienvenue dans l'Escape Game de l'Université de Villetaneuse</h2>
+        <p>Prêt à relever un défi palpitant ? Venez participer à notre escape game "La Course contre la Montre dans l'Université". Vous aurez 60 minutes pour résoudre des énigmes, des puzzles et des indices disséminés dans toute l'université et récupérer un objet volé. Êtes-vous prêt à relever le défi ?</p>
+      </section>
+      <section id="apropos">
+        <h2>A propos</h2>
+        <p>Notre escape game est ouvert à tous les étudiants et le personnel de l'université. Il se déroulera le samedi 1er mai de 14h à 18h. Les participants peuvent former des équipes de 3 à 6 personnes. Les participants doivent être présents à l'heure de départ pour recevoir les instructions.</p>
+      </section>
+      <section id="regles">
+        <h2>Règles</h2>
+        <ul>
+          <li>Les participants doivent résoudre des énigmes, des puzzles et des indices pour trouver l'emplacement de l'objet volé.</li>
+          <li>Les participants ont 60 minutes pour compléter l'escape game.</li>
+          <li>Les participants ne doivent pas endommager les indices ou les cachettes.</li>
+          <li>Les participants doivent respecter les autres joueurs et le personnel de l'université.</li>
+          <li>Les participants doivent être présents à l'heure de départ pour recevoir les instructions.</li>
+        </ul>
+      </section>
+      <section id="inscription">
+        <h2>Inscription</h2>
+        <p>Pour vous inscrire, veuillez remplir le formulaire d'inscription ci-dessous. Les inscriptions sont ouvertes jusqu'au 28 avril.</p>
+        <form>
+          <label for="nom">Nom :</label>
+          <input type="text" id="nom" name="nom" required>
+          <label for="prenom">Prénom :</label>
+          <input type="text" id="prenom" name="prenom" required>
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" required>
+          <label for="equipe">Nom de l'équipe :</label>
+          <input type="text" id="equipe" name="equipe" required>
+          <label for="participants">Nombre de participants :</label>
+          <input type="number" id="participants" name="participants" min="3" max="6" required>
+          <input type="submit" value="Inscrire">
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Escape Game créé par [votre nom].</p>
+    </footer>
   </body>
 </html>
