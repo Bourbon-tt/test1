@@ -9,8 +9,8 @@
   <body>
     <main>
       <section id="enigme">
-        <h2>Enigme</h2>
-        <img src="cafe-expo.jpg" alt="Café Expo">
+        <h2>La fameuse lettre ...</h2>
+        <img src="lettre.jpg" alt="La lettre">
         <form onsubmit="return validerReponse()">
           <label for="reponse">Quel est le nom de l'exposition ?</label>
           <input type="text" id="reponse" name="reponse" required>
@@ -24,7 +24,7 @@
     <script>
       function validerReponse() {
         var reponse = document.getElementById("reponse").value;
-        if (reponse == "cafe expo") {
+        if (reponse == "Becquerel") {
           window.location.href = "p3.html";
           return false;
         } else {
