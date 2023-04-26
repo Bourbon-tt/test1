@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>La Course contre la Montre dans l'Université</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <section id="enigme">
+        <h2>Un peu de maths</h2>
+        <img src="lettre.jpg" alt="La lettre">
+        <form onsubmit="return validerReponse()">
+          <label for="reponse">Quel est la solution</label>
+          <input type="text" id="reponse" name="reponse" required>
+          <input type="submit" value="Valider">
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Escape Game créé par [votre nom].</p>
+    </footer>
+    <script>
+      function validerReponse() {
+        var reponse = document.getElementById("reponse").value;
+        if (reponse == "C214") {
+          window.location.href = "p4.html";
+          return false;
+        } else {
+          alert("Mauvaise réponse. Réessayez !");
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>
