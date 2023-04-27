@@ -12,7 +12,7 @@
         <h2>La fameuse lettre ...</h2>
         <img src="lettre.jpg" alt="La lettre">
         <form onsubmit="return validerReponse()">
-          <label for="reponse">Quel est le titre du livre ?</label>
+          <label for="reponse">Queiest l'auteur ?</label>
           <input type="text" id="reponse" name="reponse" required>
           <input type="submit" value="Valider">
         </form>
@@ -24,7 +24,7 @@
     <script>
       function validerReponse() {
         var reponse = document.getElementById("reponse").value;
-        if (reponse == "Becquerel" | "Les Becquerel : une dynastie de scientifiques") {
+        if (reponse == "Becquerel" | "Laboratoire national Henri Becquerel") {
           window.location.href = "p3.html";
           return false;
         } else {
